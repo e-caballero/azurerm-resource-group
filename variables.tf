@@ -49,10 +49,6 @@ variable "application_team" {
 variable "application_team_email" {
   description = "The application team email of the system as defined by the data classification process. Valid values for application_team_email are (team1@company.com)"
   type        = string
-  validation {
-    condition     = can(regex("^[a-z,A-Z,.]{1,}@company.com$", var.application_team_email))
-    error_message = "Valid values for application_team_email are (team1@company.com"
-  }
 }
 variable "application_team_slack" {
   description = "The application team slack of the system as defined by the data classification process. Valid values for application_team_slack are (https://app.slack.com/huddle/1234/123)"
