@@ -21,25 +21,25 @@ resource "azurerm_resource_group" "example" {
 source = "git::https://github.com/erikcaballero/azure-resource-group?ref=v1.0"
 
 # Required Inputs
-location            = var.location
-count_num           = var.index
-environment         = var.environment
-application_id      = "S123456"
-component_name      = "Comp name"
-application_owner   = "example team1 manager fname lname"
-application_owner_email = "bob@company.com"
-application_team    = "Team1"
-application_team_email = "team1@company.com
-application_team_slack = "https://app.slack.com/huddle/1234/123"
+location                  = var.location
+count_num                 = var.index
+environment               = var.environment
+application_id            = "S123456"
+component_name            = "Comp name"
+application_owner         = "example team1 manager fname lname"
+application_owner_email   = "bob@company.com"
+application_team          = "Team1"
+application_team_email    = "team1@company.com
+application_team_slack    = "https://app.slack.com/huddle/1234/123"
 application_teams_channel = "https://teams.microsoft.com/l/team/1234"
-project             = "Sample Project"
-external           = var.external
-cost_center         = "13245678"
-compliance          = "none"
+project                   = "Sample Project"
+external                  = var.external
+cost_center               = "13245678"
+compliance                = "none"
 
 # Optional Inputs
-additional_tags = []
-description             = "This is to provide a sample"
+additional_tags           = []
+description               = "This is to provide a sample"
 }
 ```
 
