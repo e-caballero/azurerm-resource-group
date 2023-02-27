@@ -40,6 +40,6 @@ description               = "This is to provide a sample"
 
 
 <!-- BEGIN_TF_DOCS --> 
-{ .Content } 
+
 <!-- END_TF_DOCS --> 
 
