@@ -28,6 +28,6 @@ locals {
   }
 
 #resource naming convention 
-resource_group_name = "${var.application_id}-${var.environment}-${var.location}-rg-${var.count_number}"
+resource_group_name = lower("${var.application_id}-${var.environment}-${var.location}-rg-${var.count_number}")
 
 }
