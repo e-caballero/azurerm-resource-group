@@ -28,6 +28,8 @@ locals {
     "ApplicationTeamSlack"          = var.application_team_slack
     "ApplicationTeamMicrosoftTeams" = var.application_teams_channel
   }
-}
+
 #resource naming convention 
-resource_group_name = "${var.app_name}-${var.environment}-${var.location}-rg-${var.index}"
+resource_group_name = "${var.application_id}-${var.environment}-${var.location}-rg-${var.index}"
+
+}
