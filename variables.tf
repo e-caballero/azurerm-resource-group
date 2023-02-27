@@ -89,6 +89,7 @@ variable "project" {
 variable "description" {
   description = "The description of the system as defined by the data classification process. Valid values for description are (description1, description2, description3)."
   type        = string
+  default = ""
 }
 
 variable "external" {

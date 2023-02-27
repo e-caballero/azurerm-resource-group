@@ -1,5 +1,5 @@
 
-resource "azurerm_resource_group" "example" {
+resource "azurerm_resource_group" "resource_group" {
   name     = local.resource_group_name
   location = local.location
   tags     = local.common_tags

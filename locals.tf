@@ -12,11 +12,9 @@
 locals {
   common_tags = merge(local.standard_tags, var.additional_tags)
   standard_tags = {
-    "ApplicationName"               = var.app_name
     "Project"                       = var.project
     "Description"                   = var.description
     "Environment"                   = var.environment
-    "AlertEmail"                    = var.alert_email
     "External"                      = var.external
     "CostCenter"                    = var.cost_center
     "Compliance"                    = var.compliance
@@ -30,6 +28,6 @@ locals {
   }
 
 #resource naming convention 
-resource_group_name = "${var.application_id}-${var.environment}-${var.location}-rg-${var.index}"
+resource_group_name = "${var.application_id}-${var.environment}-${var.location}-rg-${var.count_number}"
 
 }
