@@ -1,9 +1,4 @@
 
-subcategory: "Base"
-layout: "azurerm"
-page_title: "Azure Resource Manager: azurerm_resource_group"
-description: |-
-  Manages a Resource Group.
 ---
 
 # azurerm_resource_group
